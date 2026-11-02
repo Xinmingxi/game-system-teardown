@@ -1,0 +1,16 @@
+# 自动保存日志（写进这里会自己触发提交）
+.autosave.log
+
+# Python
+__pycache__/
+*.pyc
+
+# Office 临时文件
+~$*.docx
+~$*.xlsx
+~$*.pptx
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
