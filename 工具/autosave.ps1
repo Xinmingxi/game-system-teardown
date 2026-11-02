@@ -1,5 +1,7 @@
 ﻿# autosave.ps1 - 每 2 小时提交一次，有远端就顺带推送。
 $ErrorActionPreference = 'Continue'
+# 没有凭据时立即失败，不要在隐藏窗口里静默挂起
+$env:GIT_TERMINAL_PROMPT = '0'
 $repo = 'D:\Desktop\重要文件\游戏系统拆解'
 $log = Join-Path $repo '.autosave.log'
 
